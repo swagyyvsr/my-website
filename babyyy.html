@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Love Letter to Zineb</title>
+<style>
+  /* Couleurs cold pink, cold blue, green hot, white, black */
+  :root {
+    --cold-pink: #d6a8a1;
+    --cold-blue: #6a8caf;
+    --green-hot: #49b675;
+    --white: #ffffff;
+    --black: #1a1a1a;
+  }
+
+  body {
+    background: linear-gradient(135deg, var(--cold-blue), var(--cold-pink));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--white);
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 0.1em;
+    text-shadow: 2px 2px 5px var(--black);
+  }
+
+  .hearts-stars {
+    font-size: 2rem;
+    margin-bottom: 1em;
+    color: var(--green-hot);
+  }
+
+  p {
+    max-width: 600px;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    background: rgba(26, 26, 26, 0.6);
+    padding: 15px 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px var(--green-hot);
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  /* Container for photos */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 700px;
+    width: 100%;
+  }
+
+  .gallery img {
+    border-radius: 15px;
+    width: calc(50% - 15px);
+    box-shadow: 0 0 15px var(--green-hot);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--cold-pink);
+  }
+
+  /* Make one photo larger for design */
+  .gallery img:nth-child(3) {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  footer {
+    margin-top: 40px;
+    font-size: 1.1rem;
+    color: var(--white);
+    text-shadow: 1px 1px 3px var(--black);
+  }
+
+</style>
+</head>
+<body>
+
+<h1>ZINEB EBN DAOUD</h1>
+<div class="hearts-stars">❤️✨❤️✨❤️</div>
+
+<p>
+  My dearest Zineb,<br /><br />
+  Every day with you feels like a beautiful dream come true.  
+  Your smile lights up my darkest days, and your kindness warms my soul.<br /><br />
+  I love uuuu amirat tabatbot.<br /><br />
+  Forever yours, with all my heart.
+</p>
+
+<div class="gallery">
+  <img src="pic1.jpg" alt="Sweet moment 1" />
+  <img src="pic2.jpg" alt="Sweet moment 2" />
+  <img src="pic3.jpg" alt="Sweet moment 3" />
+  <img src="pic4.jpg" alt="Sweet moment 4" />
+  <img src="pic5.jpg" alt="Sweet moment 5" />
+</div>
+
+<footer>
+  Made with ❤️ and ✨ just for you, Zineb.
+</footer>
+
+</body>
+</html>
